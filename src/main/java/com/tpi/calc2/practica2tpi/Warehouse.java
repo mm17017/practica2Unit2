@@ -23,9 +23,9 @@ public class Warehouse extends Container{
         maxCapacity = capacity;
     }
     
-    @Override
+    
     public boolean add(Package b){
-        if (b.getvolume() + getvolume() <= maxCapacity){
+        if (b.getVolume()+ getVolume() <= maxCapacity){
             return super.add(b);
         }
         return false;
@@ -47,7 +47,7 @@ public class Warehouse extends Container{
                 }
             }
         });
-        return copyContents.iterator;
+        return copyContents.iterator();
     }
     
 }

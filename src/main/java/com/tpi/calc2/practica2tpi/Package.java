@@ -11,4 +11,13 @@ package com.tpi.calc2.practica2tpi;
  */
 public class Package {
     
+    private double volume = 0;
+    
+    public Package(double volume){
+        this.volume = volume;
+    }
+    
+    public double getVolume(){
+        return volume;
+    }
 }
